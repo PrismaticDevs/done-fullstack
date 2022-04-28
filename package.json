@@ -1,0 +1,22 @@
+{
+    "name": "practice4.27",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "concurrently \" cd server && node server.js\" \"cd client && npm start\"",
+        "install": "concurrently \" cd server && npm i\" \"cd client && npm i\"",
+        "dev": "concurrently \"cd server && nodemon server.js\" \"cd client && npm start\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "concurrently": "^7.1.0",
+        "create-react-app": "^5.0.1"
+    },
+    "devDependencies": {
+        "react-router-dom": "^6.3.0"
+    }
+}
