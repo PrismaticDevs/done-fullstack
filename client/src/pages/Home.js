@@ -1,11 +1,15 @@
-import { Typography } from "@mui/material";
+import { Typography, Container } from "@mui/material";
+import { useEffect } from "react";
 const Home = () => {
+  useEffect(() => {
+    document.title = "Home";
+  }, []);
   return (
-    <section style={{ marginTop: "6em" }}>
+    <Container sx={{ marginTop: "6em" }}>
       <Typography sx={{ fontSize: "2.5em", textAlign: "center" }}>
         Home
       </Typography>
-      <Typography sx={{ pl: "6em", pr: "6em", textIndent: "2em" }}>
+      <Typography sx={{ textIndent: "2em" }}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
         laudantium eius! Vero optio quaerat explicabo similique ipsa dicta
         tenetur omnis, possimus id dolore voluptatem, error tempora quae
@@ -23,7 +27,7 @@ const Home = () => {
         qui doloribus repudiandae, laborum consequatur quia saepe sunt est!
         Voluptas rem tenetur nemo.
       </Typography>
-      <Typography sx={{ pl: "6em", pr: "6em", textIndent: "2em" }}>
+      <Typography sx={{ textIndent: "2em" }}>
         Consequuntur odit, iure tenetur aliquam omnis! Odio numquam impedit
         iusto architecto eaque, illo modi labore nobis nostrum a exercitationem
         excepturi vel. Vitae beatae dolorem explicabo, corporis possimus
@@ -36,7 +40,7 @@ const Home = () => {
         iste fugiat harum tempore obcaecati modi eos ab maiores! Et, cum animi
         aspernatur explicabo magnam repudiandae magni eos minima nemo maiores.
       </Typography>
-    </section>
+    </Container>
   );
 };
 

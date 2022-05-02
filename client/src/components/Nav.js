@@ -43,6 +43,10 @@ const Nav = () => {
     window.location.href = "/about";
     handleCloseNavMenu();
   };
+  const goContact = () => {
+    window.location.href = "/contact";
+    handleCloseNavMenu();
+  };
 
   return (
     <AppBar position="fixed">
@@ -90,6 +94,7 @@ const Nav = () => {
             >
               <MenuItem onClick={() => goHome()}>Home</MenuItem>
               <MenuItem onClick={() => goAbout()}>About</MenuItem>
+              <MenuItem onClick={() => goContact()}>Contact</MenuItem>
             </Menu>
           </Box>
           <Typography
@@ -105,6 +110,7 @@ const Nav = () => {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             <MenuItem onClick={() => goHome()}>Home</MenuItem>
             <MenuItem onClick={() => goAbout()}>About</MenuItem>
+            <MenuItem onClick={() => goContact()}>Contact</MenuItem>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
