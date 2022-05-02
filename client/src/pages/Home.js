@@ -24,12 +24,17 @@ const Home = () => {
         Voluptas rem tenetur nemo.
       </Typography>
       <Typography sx={{ pl: "6em", pr: "6em", textIndent: "2em" }}>
-        consequuntur odit, iure tenetur aliquam omnis! Odio numquam impedit
+        Consequuntur odit, iure tenetur aliquam omnis! Odio numquam impedit
         iusto architecto eaque, illo modi labore nobis nostrum a exercitationem
         excepturi vel. Vitae beatae dolorem explicabo, corporis possimus
         facilis. Alias, dolore. Corporis iste fugiat harum tempore obcaecati
         modi eos ab maiores! Et, cum animi aspernatur explicabo magnam
-        repudiandae magni eos minima nemo maiores.
+        repudiandae magni eos minima nemo maiores. Consequuntur odit, iure
+        tenetur aliquam omnis! Odio numquam impedit iusto architecto eaque, illo
+        modi labore nobis nostrum a exercitationem excepturi vel. Vitae beatae
+        dolorem explicabo, corporis possimus facilis. Alias, dolore. Corporis
+        iste fugiat harum tempore obcaecati modi eos ab maiores! Et, cum animi
+        aspernatur explicabo magnam repudiandae magni eos minima nemo maiores.
       </Typography>
     </section>
   );
