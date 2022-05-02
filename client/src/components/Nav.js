@@ -98,7 +98,9 @@ const Nav = () => {
             component="div"
             sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
           >
-            done.
+            <Link href="/">
+              <img style={{ height: "4em" }} src={png} alt="done." />
+            </Link>
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             <MenuItem onClick={() => goHome()}>Home</MenuItem>
