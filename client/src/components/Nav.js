@@ -8,11 +8,12 @@ import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Avatar from "@mui/material/Avatar";
-import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
+import { Link } from "@mui/material";
 
-const pages = ["Home", "About", "Contact"];
+import png from "../img/done.png";
+
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const Nav = () => {
@@ -34,6 +35,15 @@ const Nav = () => {
     setAnchorElUser(null);
   };
 
+  const goHome = () => {
+    window.location.href = "/";
+    handleCloseNavMenu();
+  };
+  const goAbout = () => {
+    window.location.href = "/about";
+    handleCloseNavMenu();
+  };
+
   return (
     <AppBar position="fixed">
       <Container maxWidth="xl">
@@ -44,7 +54,9 @@ const Nav = () => {
             component="div"
             sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
           >
-            LOGO
+            <Link href="/">
+              <img style={{ height: "4em" }} src={png} alt="done." />
+            </Link>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -76,11 +88,8 @@ const Nav = () => {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
+              <MenuItem onClick={() => goHome()}>Home</MenuItem>
+              <MenuItem onClick={() => goAbout()}>About</MenuItem>
             </Menu>
           </Box>
           <Typography
@@ -89,18 +98,11 @@ const Nav = () => {
             component="div"
             sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
           >
-            LOGO
+            done.
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                {page}
-              </Button>
-            ))}
+            <MenuItem onClick={() => goHome()}>Home</MenuItem>
+            <MenuItem onClick={() => goAbout()}>About</MenuItem>
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
@@ -137,4 +139,5 @@ const Nav = () => {
     </AppBar>
   );
 };
+
 export default Nav;

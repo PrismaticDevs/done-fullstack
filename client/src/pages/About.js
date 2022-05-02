@@ -1,11 +1,13 @@
-import { Button } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 
 const About = () => {
   return (
-    <>
-      <h1>About</h1>
+    <section style={{ marginTop: "6em" }}>
+      <Typography sx={{ fontSize: "2.5em", textAlign: "center" }}>
+        About
+      </Typography>
       <Button variant="contained">HI</Button>
-    </>
+    </section>
   );
 };
 
