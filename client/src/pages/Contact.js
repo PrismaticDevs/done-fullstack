@@ -22,6 +22,22 @@ const Contact = () => {
         <Box sx={{ display: "flex", justifyContent: "center" }}>
           <Box sx={{ m: 3 }}>
             <Typography sx={{ fontSize: "2em" }}>
+              GitHub <GitHubIcon />
+            </Typography>
+            <Link
+              href="https://github.com/PrismaticDevs"
+              sx={{
+                textDecoration: "none",
+                fontFamily: "roboto",
+                cursor: "pointer",
+              }}
+              target="_blank"
+            >
+              PrismaticDevs
+            </Link>
+          </Box>
+          <Box sx={{ m: 3 }}>
+            <Typography sx={{ fontSize: "2em" }}>
               Email <EmailIcon />
             </Typography>
             <Link
@@ -68,22 +84,6 @@ const Contact = () => {
               }}
             >
               (719) 351-5828
-            </Link>
-          </Box>
-          <Box sx={{ m: 3 }}>
-            <Typography sx={{ fontSize: "2em" }}>
-              GitHub <GitHubIcon />
-            </Typography>
-            <Link
-              href="https://github.com/PrismaticDevs"
-              sx={{
-                textDecoration: "none",
-                fontFamily: "roboto",
-                cursor: "pointer",
-              }}
-              target="_blank"
-            >
-              PrismaticDevs
             </Link>
           </Box>
         </Box>
