@@ -12,7 +12,7 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import { Link } from "@mui/material";
 
-import png from "../img/done.png";
+import png from "../img/laptop.png";
 
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
